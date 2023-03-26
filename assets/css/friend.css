@@ -1,0 +1,87 @@
+a {
+    text-decoration: none;
+    text-align: justify;
+    color: var(--first-color);
+  }
+
+.friend-card {
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 10%);
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    max-width: 700px;
+    margin-bottom: 20px;
+    padding: 25px;
+    padding-left: 25px;
+    border-radius: 10px;
+    position: relative;
+   }
+   
+   .friend-card .head {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin-left: 5px;
+   }
+   
+   .friend-card .head img {
+    width: 100%;
+    height: 100%;
+   }
+   
+   .friend-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+   }
+   
+   .friend-card-name {
+    color: var(--first-color);
+    font-size: 20px;
+    font-weight: 600;
+   }
+   
+   .friend-card-info .info {
+    font-size: 17px;
+    margin-top: 7px;
+    color: #6A717C;
+   }
+
+  .label {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+  }
+  .label img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .label-text {
+    margin-left: 3px;
+    color: #6A717C;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 0.3em;
+  }
+
+
+   .friend-card .arrow {
+    position: absolute;
+    right: 30px;
+    top: 60px;
+   }
+
+   .friend-card .arrow svg  {
+    font-size: 20px;
+   }
+   
+   @media only screen and (min-width: 480px) and (max-width: 767px){
+   .friend-card {
+    margin: 40px 28px 20px 28px;
+   }
+   }
