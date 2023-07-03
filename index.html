@@ -1,34 +1,998 @@
 <!DOCTYPE html>
-<html lang="zh-CN" dir="ltr">
+<html lang="zh_CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="./assets/img/emo-pig.png" />
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="https://amulong.top/assets/css/styles.css" />
-    <title>停站中 :）</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"/>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3900458_82z46p85im.css"/>
+    <title>主页 | 阿木龙的个人主站</title>
+    
   </head>
- 
+  
   <body>
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
-        <h2 class="section__title" i18n="about__title">停站中 :）</h2>
-        <span class="section__subtitle" i18n="about__subtitle"> </span>
-        <div class="about__container container">
-          <div class="about__data" style="margin-top: -20px;">
-    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;">并非网页出现了问题，网页运行很流畅。开发者即将参加中考，个人主站暂时停止运行。预计 2023 年 7 月以崭新的面貌凯旋。</p>
-    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;">如果你有十分紧迫的问题，可以点<a href="./assets/pages/my-wechat.html">这里</a>添加我的微信。</p>
-    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;">此外，<a href="#" onclick="alert('天天开心~')">阿木龙的个人博客</a> 也在建设中，预计 7 月发布。
-    </p>
-    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;">现实无情且残酷，愿理想主义的少年永远不会被现实招安。</p>
-    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;">最后的一段时间，要学会接受，试着与失落和苦难和解，依然积极且努力，不轻言放弃。</p>
-    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;">因为我希望我的脸上永远看不出被生活为难的痕迹。</p>
-    <br>
-    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;text-align: right;">2023 中考大捷！</p>
+    <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">阿木龙 &nbsp;&nbsp; A Mulong</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>
+                <p i18n="home">主页</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>
+                <p i18n="about">关于我</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>
+                <p i18n="skills">我能做什么</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>
+                <p i18n="portfolio">我的作品</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>
+                <p i18n="contact">联系我</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <div class="nav__link" id="translate" value="en">
+                <svg class="icon nav__icon-svg" aria-hidden="true">
+                  <use xlink:href="#icon-fanyi"></use>
+                </svg>
+                <a class="=nav__link" id="nav__translate">Translate</a>
+              </div>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
           </div>
         </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+
+              <a href="https://github.com/amulong615" target="_blank" class="home__social-icon">
+                <i class="uil uil-github-alt"></i>
+              </a>
+
+
+              <li class="nav">
+                <a href="" target="_blank" class="home__social-icon">
+                  <svg t="1676726984728" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7249" width="250" height="250"><path d="M664.250054 368.541681c10.015098 0 19.892049 0.732687 29.67281 1.795902-26.647917-122.810047-159.358451-214.077703-310.826188-214.077703-169.353083 0-308.085774 114.232694-308.085774 259.274068 0 83.708494 46.165436 152.460344 123.281791 205.78483l-30.80868 91.730191 107.688651-53.455469c38.558178 7.53665 69.459978 15.308661 107.924012 15.308661 9.66308 0 19.230993-0.470721 28.752858-1.225921-6.025227-20.36584-9.521864-41.723264-9.521864-63.862493C402.328693 476.632491 517.908058 368.541681 664.250054 368.541681zM498.62897 285.87389c23.200398 0 38.557154 15.120372 38.557154 38.061874 0 22.846334-15.356756 38.156018-38.557154 38.156018-23.107277 0-46.260603-15.309684-46.260603-38.156018C452.368366 300.994262 475.522716 285.87389 498.62897 285.87389zM283.016307 362.090758c-23.107277 0-46.402843-15.309684-46.402843-38.156018 0-22.941502 23.295566-38.061874 46.402843-38.061874 23.081695 0 38.46301 15.120372 38.46301 38.061874C321.479317 346.782098 306.098002 362.090758 283.016307 362.090758zM945.448458 606.151333c0-121.888048-123.258255-221.236753-261.683954-221.236753-146.57838 0-262.015505 99.348706-262.015505 221.236753 0 122.06508 115.437126 221.200938 262.015505 221.200938 30.66644 0 61.617359-7.609305 92.423993-15.262612l84.513836 45.786813-23.178909-76.17082C899.379213 735.776599 945.448458 674.90216 945.448458 606.151333zM598.803483 567.994292c-15.332197 0-30.807656-15.096836-30.807656-30.501688 0-15.190981 15.47546-30.477129 30.807656-30.477129 23.295566 0 38.558178 15.286148 38.558178 30.477129C637.361661 552.897456 622.099049 567.994292 598.803483 567.994292zM768.25071 567.994292c-15.213493 0-30.594809-15.096836-30.594809-30.501688 0-15.190981 15.381315-30.477129 30.594809-30.477129 23.107277 0 38.558178 15.286148 38.558178 30.477129C806.808888 552.897456 791.357987 567.994292 768.25071 567.994292z" fill="#2c74d8" p-id="7250"></path></svg>
+                </a>
+              <ul class="select-ul">
+                <div class="code"><img src="http://amlstudio.hkfree.work/img/wechat-code2023.png"></div>
+            </ul>
+              </li>
+              <a href="https://space.bilibili.com/604139347" target="_blank"
+                class="home__social-icon">
+              <img src="http://amlstudio.hkfree.work/img/bilibili.svg">
+              </a>
+            </div>
+            
+
+            <div class="home__img">
+              <image class="home__blob-img" src="http://amlstudio.hkfree.work/img/emoji-pig.png"/>
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title" i18n="home__title">
+                Hi, &nbsp;我是<span class="aml_name" i18n="amulong">阿木龙</span>。
+              </h1>
+              <h3 class="home__subtitle" i18n="home__subtitle">
+                生活对不起我的浪漫、我的赤诚、我的温柔与明亮。<br>
+                该难过的一定不是我，生活应该对此感到惭愧。
+                <!-- 
+                  一个幻想用自己的力量让第四次科技革命更快到来的初三学生。
+                -->
+              </h3>
+              
+                <a href="./assets/pages/introduce.html" target="_blank">
+                <span class="knowmore"><p i18n="xuyan">绪言
+                  <svg t="1677306697762" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2741" width="16" height="16"><path d="M312.888889 995.555556c-17.066667 0-28.444444-5.688889-39.822222-17.066667-22.755556-22.755556-17.066667-56.888889 5.688889-79.644445l364.088888-329.955555c11.377778-11.377778 17.066667-22.755556 17.066667-34.133333 0-11.377778-5.688889-22.755556-17.066667-34.133334L273.066667 187.733333c-22.755556-22.755556-28.444444-56.888889-5.688889-79.644444 22.755556-22.755556 56.888889-28.444444 79.644444-5.688889l364.088889 312.888889c34.133333 28.444444 56.888889 73.955556 56.888889 119.466667s-17.066667 85.333333-51.2 119.466666l-364.088889 329.955556c-11.377778 5.688889-28.444444 11.377778-39.822222 11.377778z" fill="#2c74d8" p-id="2742"></path></svg>
+                </p>
+                </span>
+                </a>
+
+              <p class="home__description" i18n="home__description">
+                前端开发者和工程师，坚定的社会主义建设者和信仰者，唯物主义和现实主义的正确实践，困苦中寻找黎明的初三学子。
+              </p>
+              <a href="#contact" class="button button-flex">
+                <span i18n="home__contact">与我取得联系</span>
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+              <span class="home__scroll-name" i18n="home__scroll-name">了解更多</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title" i18n="about__title">关于我</h2>
+        <span class="section__subtitle" i18n="about__subtitle"> </span>
+        <div class="about__container container">
+          <div class="about__data">
+    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;" i18n="about__description"><mark>一个幻想用自己的力量让世界更美好的初三学生，</mark>也是一名前端开发者和工程师、B 站不知名 up 主、UI 交互设计师、平面设计师、动效设计师、视频创作者、广播电视爱好者、播音爱好者、教材编写者、导播、作家、书虫和游戏玩家。</p>
+    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;" i18n="about__bilibili">B 站累计投稿视频 90 余个，累计播放量突破 12 万（截至 2023 年 2 月）。</p>
+    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;" i18n="about__wechat-mp">2018 年至今，微信公众平台累计发文 300 余条，阅读量上千。</p>
+    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;" i18n="about__show">曾担任过大型晚会的总策划和主撰稿、校艺术节彩排（舞台播控）技术支持，统筹多场小型会议、演出的设计、技术支持等工作。</p>
+
+
+    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;" i18n="about__team">- 创建并运营着这些工作团队：
+        <a href="http://amlstudio.3vfree.cn/" target="_blank">阿木龙工作室</a>、
+        <a href="#">至魅出版社</a>
+    </p>
+
+    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;">- 2017 年至今独立完成过这些项目的设计：
+        <a href="#" target="_blank">阿木龙工作室 logo 设计</a>（两版）、
+        <a href="#" target="_blank">阿木龙工作室视觉识别系统规范手册</a>、
+        <a href="#" target="_blank">阿木龙工作室宣传物料、视觉包装、网站设计</a>、
+        <a href="#" target="_blank">阿木龙工作室 2022 年红包封面设计</a>（未成功发布）、
+        <a href="#" target="_blank">至魅出版社 logo 设计</a>（两版）、
+        <a href="#" target="_blank">丛书《至魅魍魉》整书美术设计</a> 等
+    </p>
+
+
+    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;">- 2017 年至今独立完成过这些项目的开发：
+      <a href="http://amlstudio.3vfree.cn/">阿木龙工作室官网</a> 10 余个版本的更新迭代、
+      <a href="http://amlstudio.3vfree.cn/">阿木龙工作室微信小程序</a>（预计 2023 年下旬上线）、
+      <a href="http://amlstudio.3vfree.cn/">阿木龙工作室在线投稿系统</a>（上线时间待定）、
+      <a href="#">阿木龙播音系统</a>（未对外发布）、
+      <a href="#">至魅出版社官网</a>（已停止运营）、
+      <a href="http://www.mzmjs-3.icoc.me/">至魅出版社管理平台官网</a> 等
+    </p>
+
+    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;">- 学习并使用着这些专业软件：
+      <a href="#">Adobe Photoshop</a>、
+      <a href="#">Adobe After Effect</a>、
+      <a href="#">Adobe XD</a>、
+      <a href="#">Wechat DevTools</a>、
+      <a href="#">Figma</a>、
+      <a href="#">ArcGIS</a> 等
+    </p>
+    <p class="introduce-link" style="text-indent: 2em;line-height: 40px;" i18n="thanksforyou">谢谢你愿意了解我。请多多指教！</p>
+
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title" i18n="skills__title">我的技能</h2>
+        <span class="section__subtitle" i18n="skills__subtitle">我能做什么</span>
+
+        <div class="skills__container container grid">
+          <div>
+            <!--==================== SKILLS 1 ====================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title" i18n="skills__title1">
+                    前端开发
+                  </h1>
+                  <span class="skills__subtitle" i18n="skills__years">2018 年至今</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__html"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__css"></div>
+                  </div>
+                </div>
+
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">node.js(wxml、wxss)</h3>
+                    <span class="skills__number">30%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__nodejs"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__number">30%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__nodejs"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!--==================== SKILLS 2 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-server-network skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title" i18n="skills__title2">
+                    后端开发
+                  </h1>
+                  <span class="skills__subtitle" i18n="skills__years2"
+                    >2019 年至今</span
+                  >
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__number">20%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__python"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <!--==================== SKILLS 3 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+              <img src="./assets/img/textbook.svg" alt="">
+                <div>
+                  <h1 class="skills__title" i18n="skills__title3">义务教育教科书编写</h1>
+                  <span class="skills__subtitle" i18n="skills__years3">2021 年至今</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name" i18n="textbook-Chinese">义务教育教科书 语文（2022版）</h3>
+                    <span class="skills__subtitle">2022.6 -</span>
+                    <span class="skills__number" i18n="comingsoon">即将完成</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__textbook-Chinese"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name" i18n="textbook-Politics">义务教育教科书 道德与法治（2023版）</h3>
+                    <span class="skills__subtitle">2022.11 -</span>
+                    <span class="skills__number">30%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__textbook-Politics"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name" i18n="textbook-geography">义务教育教科书 地理（内蒙古自治区)</h3>
+                    <span class="skills__subtitle">2022.3 -</span>
+                    <span class="skills__number">10%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__textbook-geography"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name" i18n="textbook-history">义务教育教科书 历史（2023版）</h3>
+                    <span class="skills__subtitle">2022.11 -</span>
+                    <span class="skills__number">10%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__textbook-history"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name" i18n="textbook-English">义务教育教科书 英语（2022版）</h3>
+                    <span class="skills__subtitle">2022.8 -</span>
+                    <span class="skills__number">10%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__textbook-English"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name" i18n="textbook-law">义务教育教科书 法律与生活</h3>
+                    <span class="skills__subtitle">2022.11 -</span>
+                    <span class="skills__number">10%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__textbook-law"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!--==================== SKILLS 4 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+              <img src="./assets/img/ruanjian.svg" alt="">
+                <div>
+                  <h1 class="skills__title" i18n="skills__title4">熟练掌握并正在使用的专业软件</h1>
+                  <!--  <span class="skills__subtitle" i18n="skills__years4"> </span>  -->
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Adobe Acrobat</h3>
+                    <span class="skills__number" i18n="comingsoon">95%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__canuse"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Adobe Illustrator 2021</h3>
+                    <span class="skills__number">95%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__canuse"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Adobe Audition 2020</h3>
+                    <span class="skills__number">95%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__canuse"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Adobe Premiere Pro 2020</h3>
+                    <span class="skills__number">95%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__canuse"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Visual Studio Code</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__80"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Arctime Pro</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__80"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">vMix</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__80"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Adobe InDesign 2021</h3>
+                    <span class="skills__number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__canuse_indesign"></div>
+                  </div>
+                </div>
+              
+              <a href="#contact" class="talkwithme">
+              <p style="text-align: right;
+              color: var(--text-color-light);" i18n="talkwithme">与我交流软件的使用>>></p>
+              </a>
+              </div>
+            </div>
+
+            <!--==================== SKILLS 5 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+              <img src="./assets/img/ruanjian.svg" alt="">
+                <div>
+                  <h1 class="skills__title" i18n="skills__title6">正在学习并使用的专业软件</h1>
+                  <!--  <span class="skills__subtitle" i18n="skills__years6"> </span>  -->
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Adobe Photoshop</h3>
+                    <span class="skills__number" i18n="comingsoon">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__60"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Adobe After Effect</h3>
+                    <span class="skills__number">45%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__45"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Wechat DevTools</h3>
+                    <span class="skills__number">45%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__45"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Figma</h3>
+                    <span class="skills__number">35%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__35"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Adobe XD</h3>
+                    <span class="skills__number">35%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__35"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">ArcGIS</h3>
+                    <span class="skills__number">20%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__20"></div>
+                  </div>
+                </div>
+
+              <a href="#contact" class="talkwithme">
+              <p style="text-align: right;
+              color: var(--text-color-light);" i18n="talkwithme">与我交流软件的使用>>></p>
+              </a>
+              </div>
+            </div>
+            
+            <!--==================== SKILLS 6 ====================-->
+            <div class="skills__content skills__close">
+                          <div class="skills__header">
+                          <img src="./assets/img/game.svg" alt="">
+                            <div>
+                              <h1 class="skills__title" i18n="skills__title5">玩过的游戏</h1>
+                              <span class="skills__subtitle" i18n="skills__years5">不过现在可能不会经常玩</span>
+                            </div>
+            
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                          </div>
+            
+                          <div class="skills__list grid">
+                            <div class="skills__data">
+                              <div class="skills__titles">
+                                <h3 class="skills__name" i18n="hpjy">和平精英</h3>
+                                <span class="skills__number" i18n="high_dw">最高段位：超级王牌 ★ 4</span>
+                              </div>
+                              <div class="skills__bar">
+                                <div class="skills__percentage skills__textbook-Chinese"></div>
+                              </div>
+                            </div>
+            
+                            <div class="skills__data">
+                              <div class="skills__titles">
+                                <h3 class="skills__name" i18n="yqqs">元气骑士</h3>
+                                <span class="skills__number"> </span>
+                              </div>
+                              <div class="skills__bar">
+                                <div class="skills__percentage skills__textbook-Politics"></div>
+                              </div>
+                            </div>
+
+                                      
+                            <div class="skills__data">
+                              <div class="skills__titles">
+                                <h3 class="skills__name" i18n="lmjx">黎明觉醒：生机</h3>
+                                <span class="skills__number" i18n="2023new">2023 年新开服</span>
+                              </div>
+                              <div class="skills__bar">
+                                <div class="skills__percentage skills__textbook-Politics"></div>
+                              </div>
+                            </div>
+            
+
+            
+                            <div class="skills__data">
+                              <div class="skills__titles">
+                                <h3 class="skills__name" i18n="dwrg">第五人格（已退游）</h3>
+                                <span class="skills__subtitle"> </span>
+                                <span class="skills__number"> </span>
+                              </div>
+                              <div class="skills__bar">
+                                <div class="skills__percentage skills__20"></div>
+                              </div>
+                            </div>
+
+                            <div class="skills__data">
+                              <div class="skills__titles">
+                                <h3 class="skills__name" i18n="wdsj">我的世界（已退游）</h3>
+                                <span class="skills__subtitle"> </span>
+                                <span class="skills__number"> </span>
+                              </div>
+                              <div class="skills__bar">
+                                <div class="skills__percentage skills__20"></div>
+                              </div>
+                            </div>
+
+                            <a href="#contact" class="playwithme">
+                              <p style="text-align: right;
+                              color: var(--text-color-light);" i18n="playwithme">邀我一起开黑>>></p>
+                              </a>
+
+                          </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section">
+        <h2 class="section__title" i18n="qualification__title">我的经历</h2>
+        <span class="section__subtitle" i18n="qualification__subtitle"> </span>
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              <span i18n="education">教育</span>
+            </div>
+
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              <span i18n="work">工作</span>
+            </div>
+          </div>
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div class="qualification__content qualification__active" data-content id="education">
+            
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title" i18n="qualification1__title">钢铁大街第四小学</h3>
+                  <span class="qualification__subtitle" i18n="qualification1__subtitle">小学</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2014.9 - 2020.7
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!--<span class="qualification__line"></span>-->
+                </div>
+
+                <div>
+                  <h3 class="qualification__title" i18n="qualification2__title">包头市第二十九中学</h3>
+                  <span class="qualification__subtitle" i18n="qualification2__subtitle">初级中学</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020.9 - 2023.6
+                  </div>
+                </div>
+              </div>
+              
+              <!--
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title" i18n="qualification3__title">
+                    Web Development
+                  </h3>
+                  <span
+                    class="qualification__subtitle"
+                    i18n="qualification3__subtitle"
+                    >Self-Study</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2023 - ...
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span> -->
+                  <!-- <span class="qualification__line"></span> -->
+            <!--
+                </div>
+              </div>
+            -->
+            </div>
+            
+
+
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+                <div>
+                  <h3 class="qualification__title" i18n="qualification4__title">
+                    还没有工作经历呢~
+                  </h3>
+                  <span class="qualification__subtitle" i18n="qualification4__subtitle"></span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2023
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title" i18n="portfolio__title">我的作品</h2>
+        <span class="section__subtitle" i18n="portfolio__subtitle">近期作品</span>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="http://amlstudio.hkfree.work/img/amlstudio-website.png" alt="" class="portfolio__img"/>
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio1__title">阿木龙工作室官网</h3>
+                <p class="portfolio__description" i18n="portfolio1__description">
+                  采用 HTML5+CSS+JavaScript 语法编写，2021 年至今已经过 10 余个版本的更新和迭代，使网页更便捷、美观，运行速度更快。
+                </p>
+                <a href="http://amlstudio.3vfree.cn" target="_blank" class="button button--flex button--small portfolio__button" i18n="havealook">查看作品
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="http://amlstudio.hkfree.work/img/amlweb.png" alt="" class="portfolio__img"/>
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio2__title">阿木龙的个人主站</h3>
+                <p class="portfolio__description" i18n="portfolio2__description">采用 HTML5+CSS+JavaScript 语法编写，响应式布局，适配多种设备，具有UI组件和动画交互。</p>
+                <a href="index.html" target="_blank" class="button button--flex button--small portfolio__button" i18n="havealook">查看作品
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3 ====================-->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="http://amlstudio.hkfree.work/img/jksbx.png" alt="" class="portfolio__img"/>
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="textbook-Chinese">义务教育教科书 语文（2022版）</h3>
+                <p class="portfolio__description" i18n="portfolio3__description">
+                  依据《义务教育课程标准（2022年版）》和现行义务教育教科书修订编写。
+                </p>
+                <a href="" class="button button--flex button--small portfolio__button" onclick="alert('还没做好呢(～￣▽￣)～')" i18n="havealook">查看作品
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- add arrows-->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title" i18n="contact__title">与我取得联系</h2>
+        <span class="section__subtitle" i18n="contact__subtitle"> </span>
+
+        <div class="contact__container container grid">
+          <div>
+            <!--电话
+            <div class="contact__information">
+              <i class="uil uil-phone-alt contact__icon"></i>
+              <div>
+                <h3 class="contact__title" i18n="tel">Call me</h3>
+                <span class="contact__subtitle" i18n="tel__number">166********</span>
+              </div>
+            </div>
+          -->
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title" i18n="email">电子邮箱</h3>
+                <span class="contatc__subtitle" i18n="email__address"><a href="mailto:a.mulong@qq.com" style="color: #6A717c">a.mulong@qq.com</a></span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <img src="./assets/img/qq.svg" alt="">
+              <div>
+                <h3 class="contact__title">QQ</h3>
+                <span class="contatc__subtitle">1573939925</span>
+              </div>
+            </div>
+
+
+            <div class="contact__information">
+              <img src="./assets/img/github.svg" alt="">
+              <div>
+                <h3 class="contact__title">Github</h3>
+                <span class="contatc__subtitle"><a href="https://github.com/amulong615" style="color: #6A717c">amulong615</a></span>
+              </div>
+            </div>
+
+
+            <div class="contact__information">
+              <img src="./assets/img/instagram.svg" alt="">
+              <div>
+                <h3 class="contact__title">Instagram</h3>
+                <span class="contatc__subtitle">a.mulong</span>
+              </div>
+            </div>
+
+
+            <div class="contact__information">
+              <img src="./assets/img/bilibili.svg" alt="">
+              <div>
+                <h3 class="contact__title" i18n="bilibili">哔哩哔哩</h3>
+                <span class="contatc__subtitle"><a href="https://space.bilibili.com/604139347" style="color: #6A717c">呆呆呆呆龙_</a></span>
+              </div>
+            </div>
+
+
+            <div class="contact__information">
+              <img src="./assets/img/csdn.svg" alt="">
+              <div>
+                <h3 class="contact__title">CSDN</h3>
+                <span class="contatc__subtitle"><a href="https://blog.csdn.net/weixin_41620595" style="color: #6A717c">A Mulong</a></span>
+              </div>
+            </div>
+            
+
+            <div class="contact__information">
+              <img src="./assets/img/music163.svg" alt="">
+              <div>
+                <h3 class="contact__title" i18n="music163">网易云音乐</h3>
+                <span class="contatc__subtitle"><a href="https://music.163.com/#/user/home?id=1782380049" style="color: #6A717c">呆呆呆呆龙</a></span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+              <div>
+                <h3 class="contact__title" i18n="location">位置</h3>
+                <span class="contatc__subtitle" i18n="location__detail">内蒙古自治区 , 中华人民共和国</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+      </section>
+
+      <!--
+      <section class="addwechat">
+        <div class="addwechat">
+          <a href="./assets/pages/my-wechat.html" class="talkwithme">
+            <p style="text-align: right;
+            color: var(--text-color-light);margin-right: 240px;" i18n="addwechat">有一个紧迫的话题？<span style="color: var(--first-color);">添加微信 >>></span></p>
+            </a>
+          </div>
+      </section>
     </main>
+
+  -->
+
+    <!--==================== FOOTER start ====================-->
+    <div class="footer" id="footer">
+      <div class="jiaozhu">
+      <div class="jiaozhu-text">
+        <p i18n="banquansm">* 除特别说明外 , 本站内容为阿木龙独立编写。阿木龙拥有本站代码的著作权 , 本站代码受《中华人民共和国著作权法》保护。<br />
+        本站内除标注作者为「阿木龙」或「尼古拉斯 · 阿童木」的内容外 , 其余均不代表阿木龙观点。</p>
+      </div>
+      </div>
+    <ul>
+      <li class="footer-item">
+      <div class="title"><h3 i18n="home">主页</h3></div>
+      <div class="content"><a href="#about" i18n="about">关于我</a></div>
+      <div class="content"><a href="#skills" i18n="skills">我能做什么</a></div>
+      <div class="content"><a href="#portfolio" i18n="portfolio">我的作品</a></div>
+      <div class="content"><a href="#contact" i18n="contact"">联系我</a></div>
+      </li>
+  
+      <li class="footer-item">
+        <div class="title"><h3 i18n="blog">个人博客</h3></div>
+        <div class="content"><a href="./assets/pages/books.html" target="_blank" i18n="book-list">我的书单</a></div>
+        <div class="content"><a href="./assets/posts/posts.html" target="_blank" i18n="myposts">我的文章</a></div>
+        <div class="content"><a href="./assets/posts/video.html" target="_blank" i18n="myvideo">我的视频作品</a></div>
+        </li>
+
+        <li class="footer-item">
+          <div class="title"><h3 i18n="projects">我的项目</h3></div>
+          <div class="content"><a href="./assets/pages/my-projects.html" target="_blank" i18n="p-projects">个人项目</a></div>
+          <div class="content"><a href="./assets/pages/great-projects.html" target="_blank" i18n="g-projects">优秀项目展示</a></div>
+          </li>
+
+        <li class="footer-item">
+          <div class="title"><h3 i18n="contact">联系我</h3></div>
+        <div class="content"><a href="mailto:a.mulong@qq.com" target="_blank" i18n="myemail">我的邮箱</a></div>
+        <div class="content"><a href="https://github.com/amulong615" target="_blank" i18n="mygithub">我的 github 博客</a></div>
+        <div class="content"><a href="https://space.bilibili.com/604139347" target="_blank" i18n="mybilibili">我的哔哩哔哩频道</a></div>
+        <div class="content"><a href="./assets/pages/my-wechat.html" target="_blank" i18n="mywechat">私人微信</a></div>
+        <div class="content"><a href="./assets/pages/friends.html" target="_blank" i18n="friendlink">友情链接</a></div>
+        </li>
+
+    </ul>
+    <div class="copyright">
+    <span class="footer__copy">Copyright&nbsp;&#169;&nbsp;2018-2023<strong i18n="name">&nbsp;阿木龙</strong>.&nbsp; All rights reserved.&nbsp;&nbsp;Created by <a class="footer__copy" href="https://www.youtube.com/c/Bedimcode" target="_blank">Bedimcode.</a>
+    </span>
+    </div>
+    </div>
+
+    <!--==================== FOOTER end ====================-->
+
+
+    <div class="popup-container" id="popupContainer">
+      <div class="envelope" id="envelope">
+        <div class="envelope-info">
+            <p>你好！<br></p>
+        <p>在这个瞬息万变的世界里，时光悄然地流逝，留下了美好的回忆和珍贵的瞬间。对于我来说，这个旧站是过去的一段美好时光的见证，记录了我倾注的心血和热爱的事业，以及最失意时的言语和记忆。<br></p>
+        <p>每一个页面都是我用心编织的故事，每一个字句都承载着我的情感和思考。这里是一个曾经的归宿，一个无数梦想的温床，见证了我前行的旅程和无数的努力，包括那些我曾失意的时刻。<br></p>
+        <p>在这个旧版网站上，你将发现我最脆弱的时刻和最深沉的情感。这些言语和记忆展现了一个真实而坦诚的自我，它们是我成长的痕迹，提醒着我要勇敢地面对挑战，坚定地追逐梦想。<br></p>
+        <p>时光的车轮滚滚向前，该旧站将不再进行维护和更新。它将成为一个永恒的记忆，承载着过去的美好时光和最失意时的言语和记忆，犹如一本精美的日记，静静地散发着温暖和回忆。<br></p>
+        <p>尽管旧站已不再活跃，请你移步 <a href="https://amulong.top"> 阿木龙的新个人主站</a>，它将继续追求更多的创造和探索，这是一个崭新的空间，满载着梦想和未来的可能性。<br></p>
+        <p>无论是过去、现在还是未来，我都怀着感激之心欢迎你的访问。让我们一同把握当下，共同见证新故事的展开。<br></p>
+        <p>向你致以最诚挚的问候，祝你生活顺利。<br></p>
+        <p style="text-align: right;">阿木龙</p>
+    </div>
+    </p>
+    <div class="choose-old-or-new">
+        <button onclick="closePopup()" class="button" id="button-old">留在旧站</button>
+        <button onclick="javascript:window.location.href='https://amulong.top'" class="button" id="button-new">访问新主站</button>
+    </div>
+      </div>
+    </div>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup__icon"></i></a>
+    <!--==================== SWIPER JS ====================-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- iconfont JS -->
+    <script src="./assets/js/iconfont.js"></script>
+    <!-- jquery -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./assets/js/jquery.i18n.min.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/main.js"></script>
+    <!-- translate JS -->
+    <script src="./assets/js/cn-en-translate.js"></script>
+    <!-- underline JS -->
+    <script src="./assets/js/underline.js"></script>
+
   </body>
 </html>
