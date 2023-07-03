@@ -155,3 +155,21 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+/* 旧站弹窗  2023.7 */
+
+window.onload = function() {
+  var popupContainer = document.getElementById('popupContainer');
+  var envelope = document.getElementById('envelope');
+  
+  // 打开弹窗
+  setTimeout(function() {
+    popupContainer.style.opacity = '1';
+    envelope.classList.add('open-animation');
+  }, 1000);
+};
+
+// 关闭弹窗
+function closePopup() {
+  var popupContainer = document.getElementById('popupContainer');
+  popupContainer.style.display = 'none';
+}
